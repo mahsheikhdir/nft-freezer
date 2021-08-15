@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity 0.8.6;
+pragma solidity 0.8.4;
 
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -64,6 +64,10 @@ contract NFTFreezer is Ownable {
         Entry memory tmp = contractsInfo[hash].tokenToEntry[token];
         
         return (tmp.timestamp, tmp.cid, tmp.uri);
+    }
+    
+    function getContracts() public view  returns (NContract[] memory) {
+        return contracts;
     }
     
     function tokenCount() public view returns (uint) {

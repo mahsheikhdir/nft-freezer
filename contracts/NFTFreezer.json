@@ -118,6 +118,31 @@
 	},
 	{
 		"inputs": [],
+		"name": "getContracts",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "network",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "contracts",
+						"type": "address"
+					}
+				],
+				"internalType": "struct NFTFreezer.NContract[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "owner",
 		"outputs": [
 			{

@@ -45,12 +45,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div>
-      <div className="flex items-center p-5 gap-5 mx-auto w-3/5">
+      <div className="flex flex-wrap items-center gap-5 p-5 mx-auto w-3/5">
         <Link href='/'>
           <a className="text-4xl pr-12 font-semibold">NFTFreezer</a>
         </Link>
         <Link href='/contracts'>
-          <a className="font-semibold">CONTRACTS</a>
+          <a className="font-semibold ml-auto">CONTRACTS</a>
         </Link>
         <Link href='/fridge'>
           <a className="font-semibold">MY FRIDGE</a>
