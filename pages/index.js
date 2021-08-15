@@ -3,17 +3,15 @@ import Head from 'next/head'
 export default function Home() {
   return (
     <div>
-
-      
       <form className="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
       <div className="text-sm mb-6">
-        Submit ERC-721 NFTs with centralized metadata to be uploaded to IPFS and stored on the polygon blockchain.
+        Submit ERC-721 NFTs with centralized metadata to beuploaded to IPFS and stored on the polygon blockchain.
       </div>
     <div className="mb-4">
       <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
         Contract
       </label>
-      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"/>
+      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"/>
     </div>
     <div className="mb-6">
       <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="network">
